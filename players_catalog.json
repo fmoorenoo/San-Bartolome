@@ -1,0 +1,165 @@
+{
+  "PLAYER": [
+    {
+      "NOMBRE": "Agoney Pérez",
+      "DORSAL": "1",
+      "POSICION": "Portero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "agoney"
+    },
+    {
+      "NOMBRE": "Abian Pérez",
+      "DORSAL": "13",
+      "POSICION": "Portero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "abian"
+    },
+    {
+      "NOMBRE": "Carlos Rosa",
+      "DORSAL": "4",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "carlos"
+    },
+    {
+      "NOMBRE": "Agoney Rodríguez",
+      "DORSAL": "18",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "agoneyR"
+    },
+    {
+      "NOMBRE": "Ben Bangoura",
+      "DORSAL": "15",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "Guinea",
+      "IMAGEN": "bango"
+    },
+    {
+      "NOMBRE": "Aimar Berriel",
+      "DORSAL": "20",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "aimar"
+    },
+    {
+      "NOMBRE": "Acorán Hernandez",
+      "DORSAL": "19",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "aco"
+    },
+    {
+      "NOMBRE": "Miguel Gopar",
+      "DORSAL": "5",
+      "POSICION": "Centrocampista",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "gopar"
+    },
+    {
+      "NOMBRE": "Nadjib Mengoud",
+      "DORSAL": "17",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "nadjib"
+    },
+    {
+      "NOMBRE": "Adrian Barrera",
+      "DORSAL": "21",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "barrera"
+    },
+    {
+      "NOMBRE": "Kevin Castro",
+      "DORSAL": "9",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "kevin"
+    },
+    {
+      "NOMBRE": "Yeray Cruz",
+      "DORSAL": "16",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "yeray"
+    },
+    {
+      "NOMBRE": "Alejandro Vera",
+      "DORSAL": "22",
+      "POSICION": "Centrocampista",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "vera"
+    },
+    {
+      "NOMBRE": "Ibrahim Keita",
+      "DORSAL": "11",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "ibra"
+    },
+    {
+      "NOMBRE": "Keita",
+      "DORSAL": "12",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "Brasil",
+      "IMAGEN": "keita"
+    },
+    {
+      "NOMBRE": "David Alonso",
+      "DORSAL": "10",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "alonso"
+    },
+    {
+      "NOMBRE": "Albert Diatta",
+      "DORSAL": "2",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "Senegal",
+      "IMAGEN": "albert"
+    },
+    {
+      "NOMBRE": "Mauricio Caraballo",
+      "DORSAL": "8",
+      "POSICION": "Centrocampista",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "mauri"
+    },
+    {
+      "NOMBRE": "Joni Tejera",
+      "DORSAL": "7",
+      "POSICION": "Centrocampista",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "joni"
+    },
+    {
+      "NOMBRE": "Cristian Gonzalez",
+      "DORSAL": "3",
+      "POSICION": "Defensa",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "chino"
+    },
+    {
+      "NOMBRE": "Javi Plata",
+      "DORSAL": "6",
+      "POSICION": "Centrocampista",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "plata"
+    },
+    {
+      "NOMBRE": "Borja",
+      "DORSAL": "14",
+      "POSICION": "Centrocampista",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "borja"
+    },
+    {
+      "NOMBRE": "Raul Rodríguez",
+      "DORSAL": "25",
+      "POSICION": "Delantero",
+      "NACIONALIDAD": "España",
+      "IMAGEN": "raul"
+    }
+  ]
+}

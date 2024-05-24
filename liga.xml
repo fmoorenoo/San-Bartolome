@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla_clasificacion>
+    <equipo>
+        <puesto>1</puesto>
+        <nombre>UD Las Palmas C</nombre>
+        <jugado>28</jugado>
+        <ganados>24</ganados>
+        <empatados>3</empatados>
+        <perdidos>1</perdidos>
+        <diferencia>102 - 15</diferencia>
+        <puntos>75</puntos>
+    </equipo>
+    <equipo>
+        <puesto>2</puesto>
+        <nombre>San Bartolomé C.F.</nombre>
+        <jugado>28</jugado>
+        <ganados>17</ganados>
+        <empatados>6</empatados>
+        <perdidos>5</perdidos>
+        <diferencia>62 - 34</diferencia>
+        <puntos>57</puntos>
+    </equipo>
+    <equipo>
+        <puesto>3</puesto>
+        <nombre>CD Lomo Blanco</nombre>
+        <jugado>28</jugado>
+        <ganados>14</ganados>
+        <empatados>4</empatados>
+        <perdidos>10</perdidos>
+        <diferencia>36 - 35</diferencia>
+        <puntos>46</puntos>
+    </equipo>
+    <equipo>
+        <puesto>4</puesto>
+        <nombre>UD Teror Balompié</nombre>
+        <jugado>28</jugado>
+        <ganados>12</ganados>
+        <empatados>9</empatados>
+        <perdidos>7</perdidos>
+        <diferencia>36 - 30</diferencia>
+        <puntos>45</puntos>
+    </equipo>
+    <equipo>
+        <puesto>5</puesto>
+        <nombre>CD Tinajo</nombre>
+        <jugado>28</jugado>
+        <ganados>12</ganados>
+        <empatados>5</empatados>
+        <perdidos>11</perdidos>
+        <diferencia>38 - 34</diferencia>
+        <puntos>41</puntos>
+    </equipo>
+    <equipo>
+        <puesto>6</puesto>
+        <nombre>UD Guía</nombre>
+        <jugado>28</jugado>
+        <ganados>12</ganados>
+        <empatados>4</empatados>
+        <perdidos>12</perdidos>
+        <diferencia>44 - 39</diferencia>
+        <puntos>40</puntos>
+    </equipo>
+    <equipo>
+        <puesto>7</puesto>
+        <nombre>Sporting Tías</nombre>
+        <jugado>28</jugado>
+        <ganados>12</ganados>
+        <empatados>4</empatados>
+        <perdidos>12</perdidos>
+        <diferencia>44 - 41</diferencia>
+        <puntos>40</puntos>
+    </equipo>
+    <equipo>
+        <puesto>8</puesto>
+        <nombre>CD Tahíche</nombre>
+        <jugado>28</jugado>
+        <ganados>12</ganados>
+        <empatados>3</empatados>
+        <perdidos>13</perdidos>
+        <diferencia>41 - 44</diferencia>
+        <puntos>39</puntos>
+    </equipo>
+    <equipo>
+        <puesto>9</puesto>
+        <nombre>CD Maspalomas</nombre>
+        <jugado>28</jugado>
+        <ganados>9</ganados>
+        <empatados>10</empatados>
+        <perdidos>9</perdidos>
+        <diferencia>36 - 33</diferencia>
+        <puntos>37</puntos>
+    </equipo>
+    <equipo>
+        <puesto>10</puesto>
+        <nombre>CD Ingenio</nombre>
+        <jugado>28</jugado>
+        <ganados>11</ganados>
+        <empatados>3</empatados>
+        <perdidos>14</perdidos>
+        <diferencia>36 - 48</diferencia>
+        <puntos>36</puntos>
+    </equipo>
+    <equipo>
+        <puesto>11</puesto>
+        <nombre>CD Vecinklubf</nombre>
+        <jugado>28</jugado>
+        <ganados>10</ganados>
+        <empatados>4</empatados>
+        <perdidos>14</perdidos>
+        <diferencia>41 - 48</diferencia>
+        <puntos>34</puntos>
+    </equipo>
+    <equipo>
+        <puesto>12</puesto>
+        <nombre>UD San Fernando B</nombre>
+        <jugado>28</jugado>
+        <ganados>10</ganados>
+        <empatados>3</empatados>
+        <perdidos>15</perdidos>
+        <diferencia>35 - 49</diferencia>
+        <puntos>33</puntos>
+    </equipo>
+    <equipo>
+        <puesto>13</puesto>
+        <nombre>Sporting San José</nombre>
+        <jugado>28</jugado>
+        <ganados>7</ganados>
+        <empatados>8</empatados>
+        <perdidos>13</perdidos>
+        <diferencia>40 - 46</diferencia>
+        <puntos>29</puntos>
+    </equipo>
+    <equipo>
+        <puesto>14</puesto>
+        <nombre>UD Agaete</nombre>
+        <jugado>28</jugado>
+        <ganados>6</ganados>
+        <empatados>4</empatados>
+        <perdidos>18</perdidos>
+        <diferencia>27 - 63</diferencia>
+        <puntos>22</puntos>
+    </equipo>
+    <equipo>
+        <puesto>15</puesto>
+        <nombre>CD Guayarmina</nombre>
+        <jugado>28</jugado>
+        <ganados>5</ganados>
+        <empatados>4</empatados>
+        <perdidos>19</perdidos>
+        <diferencia>26 - 85</diferencia>
+        <puntos>19</puntos>
+    </equipo>
+</tabla_clasificacion>

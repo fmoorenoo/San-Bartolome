@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* ESTILOS GENERALES */
+:root {
+    --dark: #242424;
+    --red: rgb(247, 82, 82);
+    --grey: rgb(190, 190, 190);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Quicksand';
+}
+body, html {
+    height: 100%;
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--red) transparent;
+}
+body {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main";
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: 130px auto;
+    background-color: rgb(59, 59, 59);
+    transition: all 1s;
+}
+img {
+    user-select: none;
+}
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.claro {
+    background-color: var(--grey);
+    transition: all 0.2s;
+}
+.claro main {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.claro #menu {
+    transform: translateX(-200px);
+    transition: all 0.5s;
+}
+#titulo {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 2rem;
+    background-color: #ff3d3dda;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+form {
+    color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    gap: 20px;
+}
+#formulario {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #2b2b2b;
+    padding: 15px;
+}
+#botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2b2b2b;
+}
+#botones button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: solid 1px white;
+    cursor: pointer;
+}
+#one{background-color: rgb(112, 186, 255);}
+#one:hover{background-color: rgb(70, 166, 255);}
+#two {background-color: rgb(255, 71, 71);}
+#two:hover { background-color: rgb(255, 39, 39);}
+
+#one img, #two img {
+    width: 40px;
+    height: auto;
+}
+
+form #div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/camiseta.png');
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    width: 130px;
+}
+
+#dorsales {
+    background: none;
+    height: 140px;
+    width: 150px;
+    color: white;
+    font-size: 3rem;
+    font-family: "Poppins";
+    text-align: center;
+    border: none;
+}
+
+#dorsales:focus {
+    outline: none;
+}
+
+#error {
+    color: var(--red);
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+#tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    color: white;
+    border: solid 3px #ccc;
+    gap: 10px;
+}
+
+.nombre, .pais, .posicion {
+    margin: 0;
+    padding: 4px 0;
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px; 
+    height: 250px; 
+    border-radius: 10px;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 20px;
+    border: solid 2px rgb(255, 69, 69);
+}
+
+.dorsal {
+    font-size: 4rem;
+    margin: 0;
+    color: var(--red);
+}
+
+.nombre {
+    font-size: 1.5rem;
+}

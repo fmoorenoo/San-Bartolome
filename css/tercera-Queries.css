@@ -1,0 +1,183 @@
+@media (max-width: 1500px) {
+    main {
+        width: 800px;
+        transition: width 0.2s;
+        margin-top: 0;
+    }
+    main h1{
+        font-size: 3.5rem;
+        transition: none;
+    }
+    .tarjetas {
+        font-size: 1.5rem;
+    }
+    #seccion2{
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    #seccion2 h3{
+        font-size: 2rem;
+    }
+    #liga{
+        width: 100%;
+    }
+    #container {
+        padding: 40px;
+        flex-direction: column;
+    }
+    #img-club {
+        width: 70%; 
+    }
+    #container p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 650px;
+    }
+    main h1{
+        font-size: 2.8rem;
+    }
+    .tarjetas {
+        font-size: 1.3rem;
+    }
+    #seccion2{
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+    #seccion2 h3{
+        font-size: 1.6rem;
+    }
+    #liga{
+        width: 100%;
+        min-width: 100%;
+        overflow-x: auto;
+    }
+    .tabla {
+        font-size: 18px;
+    }
+    .tabla th, .tabla td {
+        padding: 5px 5px; 
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 500px;
+    }
+    main h1{
+        font-size: 2.4rem;
+    }
+    .info h3{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .tarjetas {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        gap: 15px;
+    }
+    #seccion2 h3{
+        font-size: 1.6rem;
+    }
+    #seccion2{
+        font-size: 1.1rem;
+    }
+    #seccion2 p{
+        padding: 0 10px;
+    }
+    #liga{
+        width: 100%;
+        padding: 5px;
+    }
+    .tabla {
+        font-size: 15px;
+    }
+    .tabla th, .tabla td {
+        padding: 5px 5px; 
+    }
+    #container p{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        width: 400px;
+    }
+    main h1{
+        font-size: 1.9rem;
+    }
+    .info h3{
+        font-size: 1.3rem;
+    }
+    .tarjetas {
+        font-size: 1.2rem;
+    }
+    #seccion2{
+        font-size: 1.2rem;
+    }
+    #seccion2 p{
+        padding: 10px;
+    }
+    #liga{
+        width: 100%;
+        padding: 0px;
+    }
+    .tabla {
+        font-size: 11px;
+    }
+    .tabla th, .tabla td {
+        padding: 5px 5px; 
+    }
+    #container {
+        padding: 15px;
+    }
+    #container p{
+        width: 90%;
+        padding: 15px;
+    }
+    #container img {
+        width: 90%
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 350px;
+    }
+    main h1{
+        font-size: 1.6rem;
+    }
+    .info h3{
+        font-size: 1.2rem;
+    }
+    .tarjetas {
+        font-size: 1.1rem;
+    }
+    .tarjeta {
+        height: 70px;
+        width: 80%;
+    }
+    #seccion1 img {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #seccion2{
+        font-size: 1.1rem;
+    }
+    #seccion2 p{
+        padding: 0px;
+    }
+    #liga{
+        width: 300px;
+    }
+    .tabla {
+        font-size: 11px;
+    }
+    .tabla th, .tabla td {
+        padding: 5px 0px; 
+    }
+}

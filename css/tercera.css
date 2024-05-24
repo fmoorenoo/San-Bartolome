@@ -1,0 +1,149 @@
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 1.4rem;
+    width: 80vw;
+    background-color: #e0e0e0;
+    transition: width 0.5s;
+}
+.oscuro{
+    background-color: rgb(59, 59, 59);
+    transition: all 0.3s;
+}
+.oscuro main, .oscuro #menu{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+main h1{
+    color: var(--red);
+    text-align: center;
+    font-size: 5.5rem;
+    transition: font-size 2s;
+}
+#seccion1, #seccion2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info h3{
+    font-style: italic;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.tarjetas {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+.tarjeta {
+    background-color: var(--dark);
+    width: 60%;
+    height: 100px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    cursor: pointer;
+    user-select: none;
+}
+.tarjeta:hover {
+    transform: scale(1.02);
+    background-color: rgb(65, 65, 65);
+    transition: all 0.5s;
+}
+#seccion1 img {
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 85%;
+    display: flex;
+    align-self: center;
+}
+#seccion2 {
+    margin-top: 150px;
+    padding: 50px;
+    font-size: 1.6rem;
+}
+#seccion2 p{
+    padding: 0 30px;
+}
+#seccion2 h3{
+    color: var(--red);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+#liga{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 650px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(170, 170, 170);
+    transition: width 1s;
+    overflow-x: auto;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.tabla {
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    width: 600px;
+    border-left: 5px solid #e2e2e2;
+    background-color: #e0e0e0;  
+    
+}
+.tabla th, .tabla td {
+    padding: 8px 5px;
+    border: 1px solid #dddddd; 
+}
+.tabla th {
+    background-color: #009b7c;
+    color: #ffffff;
+    text-align: center;
+}
+.tabla tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+.tabla tr:nth-child(2){
+    border-left: solid 8px rgb(92, 177, 92);
+}
+.tabla tr:nth-child(3), .tabla tr:nth-child(4), .tabla tr:nth-child(5){
+    border-left: solid 8px rgb(255, 197, 131);
+}
+.tabla tr:nth-child(12), .tabla tr:nth-child(13), .tabla tr:nth-child(14), .tabla tr:nth-child(15), .tabla tr:nth-child(16){
+    border-left: solid 8px rgb(255, 97, 97);
+}
+.tabla tr:nth-child(3){
+    font-weight: bold;
+}
+table tr td:not(:nth-child(2)) {
+    text-align: center;
+}
+#container {
+    margin-top: 40px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--grey);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+#img-club {
+    width: 30%; 
+}
+#container p {
+    width: 70%; 
+    background-color: rgb(255, 216, 216);
+    padding: 20px;
+}

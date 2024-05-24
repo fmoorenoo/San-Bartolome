@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Oficial del San Bartolomé C.F.</title>
+    <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+</head>
+<body>
+  <!-- BANNER SUPERIOR -->
+  <header>
+      <img id="logo" src="images/escudo.png" alt="">
+      <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">Página Oficial</h1>
+      <img id="s1972" src="images/1972.png" alt="">
+  </header>
+
+  <!-- MENÚ LATERAL -->
+  <nav id="menu">
+      <ul>
+        <li onclick="cambiarSeccion(0)" class="active" id="home">HOME</li>
+        <li onclick="cambiarSeccion(1)">TERCERA</li>
+        <li onclick="cambiarSeccion(2)">ABÓNATE</li>
+        <li onclick="cambiarSeccion(3)">CAMPUS</li>
+      </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main id="main-home">
+    <!-- Sección de bienvenida y presentación -->
+    <section id="seccion1">
+        <div class="inicio">
+          <h3>- INICIO -</h3>
+          <p>Bienvenidos/as a la página del <a>San Bartolomé C.F</a>, una familia apasionada por el fútbol. Descubre nuestra historia y conoce a nuestros jugadores.<br><br>¡<a>Abónate</a> y participa en esta gran familia rojiblanca!</p>
+          <a href="abonate.html" class="btn1">¡Únete Ahora!</a>
+        </div>
+        <img src="images/main.jpg" class="club-img">
+    </section>
+    <section id="seccion2">
+        <div class="info">
+            <h3>- NOTICIAS -</h3>
+            <p>¿Quieres estar al día? Entérate de todo en nuestra sección de <a>noticias</a>.<br><br> Desde los logros de nuestros jóvenes hasta las hazañas en Tercera RFEF</p>
+            <a href="#title" class="btn2">Ver Noticias</a>
+        </div>
+        <img src="images/all.jpg" class="club-img">
+    </section>
+    <span id="title"></span>
+
+    <!-- Sección de noticias -->
+    <h1 id="titulo-noticias">- Últimas Noticias -</h1>
+    <section id="noticias">
+
+      <div class="noticia">
+        <img src="images/noticias/perm.jpg" alt="Noticia 1">
+        <div class="content">
+          <h2>Objetivo cumplido. Permanencia</h2>
+          <p>El día 1 de mayo nuestro equipo de <a href="tercera.html" id="red">Tercera Federación</a> conseguía matemáticamente la permanencia en la categoría tras ganar 2-0 a la U. D. Gran Tarajal, con goles de Kevin Castro y Acorán. La próxima temporada más y mejor. Agradecemos todo el apoyo en todos y cada uno de los partidos. 
+            ¡ORGULLO BATATERO!</p>
+        </div>
+      </div>
+
+      <div class="noticia">
+        <img src="images/noticias/juv.jpg" alt="Noticia 2">
+        <div class="content">
+          <h2>Una temporada impecable</h2>
+          <p>Tras golear 7 - 0 al Inter de Playa Honda "B", nuestro equipo juvenil se proclamaba campeón de la liga insular juvenil preferente donde está completando una brillante temporada. De 31 jornadas, han conseguido 30 victorias y 1 empate, logrando acabar INVICTOS.</p>
+        </div>
+      </div>
+
+      <div class="noticia">
+        <img src="images/noticias/retiro.jpg" alt="Noticia 3">
+        <div class="content">
+          <h2>Se despide "El Gallego"</h2>
+          <p>Era el minuto 76 cuando el partido entre el San Bartolomé y el Unión Puerto de la Tercera RFEF se detenía para despedir como merecía a David Alonso "El Gallego" que tras toda una vida de rojiblanco, decía adiós al fútbol. “Complicado porque llevas toda tu vida haciendo esto, pero es una decisión muy meditada”.</p>
+        </div>
+      </div>
+
+      <div class="noticia">
+        <img src="images/noticias/sbcup.jpg" alt="Noticia 4">
+        <div class="content">
+          <h2>Equipos confirmados</h2>
+          <p>El día 16 de mayo se presentó la primera edición de la <a>San Bartolomé Cup</a> de categoría benjamín en el Cabildo de Lanzarote. Un torneo que contará con prestigiosos equipos como el <a href="https://www.atleticodemadrid.com/equipos/atletico-de-madrid-benjamin-a-2023-2024" target="_blank" id="blue">Atlético de Madrid</a>, <a href="https://www.athletic-club.eus/" target="_blank" id="blue">Athletic Club de Bilbao</a> y <a href="https://www.valenciacf.com/equipo15" target="_blank" id="blue">Valencia C.F.</a> entre otros, junto con varios equipos de Canarias y de nuestra isla de Lanzarote.</p>
+        </div>
+      </div>
+
+      <div class="noticia">
+        <img src="images/noticias/veo.jpg" alt="Noticia 5">
+        <div class="content">
+          <h2>Sigue nuestros partidos</h2>
+          <p>Tenemos la solución para los que no pueden estar presentes viendo los partidos. Con la tecnología de <a href="https://play.google.com/store/apps/details?id=co.veo.live&hl=es_419&gl=US&pli=1" target="_blank" id="veo">Veo Live</a>, una cámara de gran calidad que sigue el movimiento del balón de forma automática, estamos retransmitiendo en vivo todos nuestros partidos de Tercera RFEF. <br><br>¡Descarga la App y anímanos desde tu casa!</p>
+        </div>
+      </div>
+
+      <div class="noticia">
+        <img src="images/noticias/campus.jpg" alt="Noticia 6">
+        <div class="content">
+          <h2>Un verano de fútbol</h2>
+          <p>Para todos esos niños que se despiertan con un balón en los pies, hemos traído un año más el <a href="campus.html" id="red">Campus de Verano</a> del San Bartolomé C.F., una forma entretenida, y sobretodo sana, de pasar el verano. Campus abierto del 1 de julio al 2 de agosto. <br><br> Próximamente información e inscripción.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+    
+  <!-- FOOTER -->
+  <footer>
+    <section class="links">
+      <div class="redes">
+        <h3>Síguenos en redes sociales:</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="enlaces">
+          <h3>Enlaces útiles:</h3>
+          <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Aviso legal</a></li>
+          </ul>
+      </div>
+    </section>
+    <section id="legal">© 2024, San Bartolomé C.F. Todos los derechos reservados.</section>   
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

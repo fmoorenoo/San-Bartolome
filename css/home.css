@@ -1,0 +1,117 @@
+main { 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+#blue, #veo, #red {
+    text-decoration: underline;
+    font-weight: bold;
+}
+#blue {color: rgb(69, 110, 197);}
+#veo {color: rgb(52, 155, 61);}
+#red {color: var(--red);}
+
+/* Secciones */
+#seccion1, #seccion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #dddddd;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    gap: 5%;
+    margin-bottom: 40px;
+}
+.inicio {
+    background-color: #f9f9f9b6;
+    border: solid 3px rgb(255, 120, 120);
+    padding: 30px;
+    border-radius: 10px;
+}
+.inicio:hover {
+    border: solid 3px #4CAF50;
+    transition: border 0.5s;
+}
+.inicio p, .info p {
+    margin: 20px 0 35px 0;
+}
+.inicio p a{
+    color: var(--red);
+    font-weight: bold;
+}
+.club-img {
+    width: 100%;
+    border-radius: 10px;
+    border: solid 3px rgb(245, 245, 245)
+}
+
+/* Estilos para la sección 2 */
+#seccion2 {
+    margin-top: 25px;
+}
+.info {
+    background-color: #ffc6c6b6;
+    border: solid 3px rgb(255, 120, 120);
+    padding: 30px;
+    border-radius: 10px;
+    transition: font-size 1s;
+}
+.info p a{
+    color: #4076b4;
+    font-weight: bold;
+}
+.info:hover {
+    border: solid 3px #5790d1;
+    transition: border 0.5s;
+}
+
+/* Estilos para los botones */
+.btn1, .btn2 {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.btn1 {background-color: #4CAF50;}
+.btn1:hover {background-color: #26722a;}
+
+.btn2 {background-color: #5790d1;}
+.btn2:hover {background-color: rgb(50, 85, 150);}
+
+/* Noticias */
+#titulo-noticias {
+    width: 100%;
+    margin-top: 200px;
+    border-top: solid var(--red);
+    text-align: center;
+    padding-top: 50px;
+}
+#noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    margin: 10px 70px 100px 70px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.noticia {
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.726);
+    margin-top: 50px;
+  }
+  .noticia img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .content {margin: 20px;}
+  .content h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+  }
