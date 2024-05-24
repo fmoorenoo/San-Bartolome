@@ -55,14 +55,16 @@ header {
     width: 100%;
     height: 130px;
     z-index: 1;
+    transition: height 1s;
 }
-h1{
+header h1{
     font-size: 40px;
     font-family: "Poppins";
     transition: all 1s ease-in-out;
 }
 span {
     font-size: 55px;
+    font-weight: bold;
 }
 #logo {
     width: 110px;
@@ -71,9 +73,6 @@ span {
 #s1972 {
     width: 145px;
     height: auto;
-}
-span {
-    font-weight: bold;
 }
 
 /* MENÚ LATERAL */
@@ -94,7 +93,7 @@ span {
     direction: rtl; 
     scrollbar-width: thin; 
     scrollbar-color: rgb(202, 71, 71) transparent;
-    transition: width 1s;
+    transition: width 1s, top 0.75s;
 }
 nav ul {
     width: 100%;
