@@ -196,9 +196,6 @@ nav ul li:hover {
 }
 
 @media (max-width: 500px) {
-    #logo {
-        width: 80px;
-    }
     #titulo {
         margin-top: 20px;
         font-size: 1.3rem;
