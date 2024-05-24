@@ -132,12 +132,16 @@
     #main-title {
         font-size: 30px;
     }
+    
 }
 
 @media (max-width: 550px) {
     .noticia {
         font-size: 1rem;
     } 
+    #logo {
+        width: 100px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -180,7 +184,11 @@
         width: 85px;
     }
     #menu {
-        top: 80px;
+        top: 85px;
         transition: top 0.75s;
+    }
+    nav ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
