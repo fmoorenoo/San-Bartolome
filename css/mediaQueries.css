@@ -144,6 +144,12 @@
     }
 }
 
+@media (max-width: 550px) {
+    #logo {
+        width: 80px;
+    }
+}
+
 @media (max-width: 460px) {
     #main-title {
         font-size: 25px;
@@ -170,8 +176,8 @@
 @media (max-height: 550px){
     header {
         height: 90px;
-        position: relative;
         transition: height 1s;
+        position: relative;
     }
     header h1{
         font-size: 30px;
