@@ -144,12 +144,6 @@
     }
 }
 
-@media (max-width: 550px) {
-    #logo {
-        width: 80px;
-    }
-}
-
 @media (max-width: 460px) {
     #main-title {
         font-size: 25px;

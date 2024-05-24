@@ -189,6 +189,11 @@ nav ul li:hover {
         font-size: 1.3rem;
     }
 }
+@media (max-width: 550px) {
+    #logo {
+        width: 100px;
+    }
+}
 
 @media (max-width: 500px) {
     #logo {
