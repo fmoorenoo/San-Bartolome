@@ -283,3 +283,21 @@ nav ul li:hover {
         font-size: 20px;
     }
 }
+
+@media (max-height: 550px){
+    header {
+        height: 90px;
+        transition: height 1s;
+        position: relative;
+    }
+    header h1{
+        font-size: 30px;
+        transition: all 1s ease-in-out;
+    }
+    span {
+        font-size: 45px;
+    }
+    #logo {
+        width: 85px;
+    }
+}

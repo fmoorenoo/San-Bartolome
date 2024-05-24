@@ -166,6 +166,7 @@
 @media (max-height: 550px){
     header {
         height: 90px;
+        position: relative;
         transition: height 1s;
     }
     header h1{
