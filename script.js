@@ -48,7 +48,7 @@ function mostrarLiga(xml) {
 function cambiarSeccion(li) {
     let secciones, urls;
     secciones = document.querySelectorAll("li");
-    urls = ["home.html", "tercera.html", "abonate.html", "campus.html"];
+    urls = ["index.html", "tercera.html", "abonate.html", "campus.html"];
     for (let i = 0; i < secciones.length; i++) {
         secciones[i].classList.remove("active");
     }
