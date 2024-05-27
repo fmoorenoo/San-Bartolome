@@ -106,3 +106,13 @@ function limpiar(){
     document.getElementById("dorsales").value = "";
     document.getElementById("dorsales").focus();
 }  
+
+function seccionPago() {
+    document.getElementById('seccionInfo').classList.remove('seccionActiva');
+    document.getElementById('seccionPago').classList.add('seccionActiva');
+}
+
+function seccionInfo() {
+    document.getElementById('seccionPago').classList.remove('seccionActiva');
+    document.getElementById('seccionInfo').classList.add('seccionActiva');
+}

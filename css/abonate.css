@@ -1,0 +1,29 @@
+main {
+    margin: 50px;
+    border: solid #ccc;
+    width: 70%;
+    height: 500px;
+    padding: 0;
+}
+#secciones {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: solid #ccc;
+    margin: 0;
+    background-color: var(--red);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.7rem;
+}
+.boton{
+    font-weight: bold;
+    color: white;
+}
+.club-section {
+    display: none;
+}
+.seccionActiva {
+    display: flex;
+    flex-direction: column;
+}

@@ -56,13 +56,14 @@ header {
     height: 130px;
     z-index: 1;
     transition: height 1s;
+    user-select: none;
 }
 header h1{
     font-size: 40px;
     font-family: "Poppins";
     transition: all 1s ease-in-out;
 }
-span {
+header span {
     font-size: 55px;
     font-weight: bold;
 }
