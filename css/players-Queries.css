@@ -76,6 +76,10 @@ nav ul li:hover {
     background: linear-gradient(to left, rgb(190, 190, 190), var(--red));
     transition: transform 0.4s;
 }
+#home {
+    width: 50%;
+    opacity: 0.8;
+}
 
 @media (max-width: 1350px) {
     #s1972 {
