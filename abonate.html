@@ -6,8 +6,8 @@
     <title>San Bartolomé C.F | Abónate</title>
     <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
     <link rel="stylesheet" href="css/abonate.css">
+    <link rel="stylesheet" href="css/abonate-Queries.css">
 </head>
 <body>
   <!-- BANNER -->
@@ -30,26 +30,34 @@
   <!-- PESTAÑA -->
   <main>
     <div id="secciones">
-        <div id="botonInfo" class="boton activo" onclick="seccionInfo()">Información</div>
-        <div id="botonPago" class="boton" onclick="seccionPago()">Hacerme Socio</div>
+        <div id="botonInfo" class="boton activo" onclick="apartados(1)">Información</div>
+        <div id="botonPago" class="boton" onclick="apartados(2)">Hacerme Socio</div>
+        <div id="botonMapa" class="boton" onclick="apartados(3)">Encuéntranos</div>
     </div>
-    <div id="seccionInfo" class="club-section seccionActiva">
-        <h1>Únete a Nuestro Club</h1>
-        <p>Ser socio de nuestro club te ofrece numerosos beneficios. ¡Únete hoy y sé parte de nuestra comunidad!</p>
+    <div id="content">
+        <div id="seccionInfo" class="club-section seccionActiva">
+            <h1>Únete a la familia</h1>
+            <p>Disfruta de TODOS nuestros partidos en casa. ¡Únete hoy y sé parte de nuestra comunidad!</p>
+        </div>
+        <div id="seccionPago" class="club-section">
+            <h1>Realizar el Pago</h1>
+            <p>Por favor, completa el siguiente formulario para realizar tu pago y convertirte en socio de nuestro club.</p>
+            <form autocomplete="off">
+                <label for="nombre">Nombre Completo:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"><br>
+            </form>
+        </div>
+        <div id="seccionMapa" class="club-section">
+          <h1>¿Dónde nos encontramos?</h1>
+          <p>Puede realizar el pago en nuestras oficinas del 'Pedro Espinosa Colón'. <br>
+              Haga <a href="#mapaIframe">click</a> en el mapa para ver la ubicación
+          </p>
+          <iframe id="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1744.8654747681912!2d-13.617037341278078!3d28.99534270000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4626b50045992d%3A0x397fb6f9414b9df3!2sCampo%20de%20f%C3%BAtbol%20San%20Bartolom%C3%A9!5e0!3m2!1ses!2ses!4v1716831902925!5m2!1ses!2ses" width="450" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-
-    <div id="seccionPago" class="club-section">
-        <h1>Realizar el Pago</h1>
-        <p>Por favor, completa el siguiente formulario para realizar tu pago y convertirte en socio de nuestro club.</p>
-        <form autocomplete="off">
-            <label for="nombre">Nombre Completo:</label><br>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <button type="submit" class="club-btn">Pagar</button>
-        </form>
-    </div>
-  </main>
+</main>
   <!-- FOOTER -->
   <footer>
     <section class="links">

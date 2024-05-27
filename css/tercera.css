@@ -5,7 +5,7 @@ main {
     align-items: center;
     justify-self: center;
     font-size: 1.4rem;
-    width: 80vw;
+    width: 70vw;
     background-color: #e0e0e0;
     transition: width 0.5s;
 }
@@ -20,7 +20,7 @@ main {
 main h1{
     color: var(--red);
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     transition: font-size 2s;
 }
 #seccion1, #seccion2 {
@@ -144,6 +144,6 @@ table tr td:not(:nth-child(2)) {
 }
 #container p {
     width: 70%; 
-    background-color: rgb(255, 216, 216);
+    background-color: rgb(235, 235, 235);
     padding: 20px;
 }

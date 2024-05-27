@@ -1,0 +1,119 @@
+@media (max-width: 1350px) {
+    #s1972 {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hide {
+        display: none;
+    }
+    #menu {
+        width: 70px;
+        transition: width 1s;
+    }
+    nav ul li {
+        margin: 10px 0 15px 19px;
+        width: 50px;
+        height: 110px;
+        border-radius: 0 20px 20px 0;
+        font-size: 21px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        transition: all 0.4s;
+    }
+    nav ul li:hover, .active, .active:hover {
+        transform: rotate(180deg);
+    }
+    .active {
+        background: linear-gradient(to right, rgb(190, 190, 190), var(--red));
+        width: 50px;
+        border-radius: 0 20px 20px 0;
+    }
+    .active:hover {
+        border: solid 2px;
+        border-left: none;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 750px) {
+    #main-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    #menu {
+        top: 150px;
+        width: 45px;
+        height: 400px;
+        border-radius: 0 15px 15px 0;
+        max-height: 75vh;
+        margin-top: 10px;
+    }
+    nav ul li, .active {
+        margin: 5px;
+        width: 30px;
+        height: 90px;
+        border-radius: 15px;
+        font-size: 17px;
+    }
+    body {
+        grid-template-columns: 20px 1fr;
+    }
+    footer {
+        font-size: 0.7rem;
+    }
+    .links {
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+    #main-title {
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    #logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 460px) {
+    #main-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-height: 550px){
+    header {
+        height: 90px;
+        transition: height 1s;
+        position: relative;
+    }
+    header h1{
+        font-size: 30px;
+        transition: all 1s ease-in-out;
+    }
+    span {
+        font-size: 45px;
+    }
+    #logo {
+        width: 85px;
+    }
+    #menu {
+        top: 85px;
+        transition: top 0.75s;
+    }
+    nav ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

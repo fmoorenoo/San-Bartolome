@@ -107,18 +107,16 @@ function limpiar(){
     document.getElementById("dorsales").focus();
 }  
 
-function seccionPago() {
-    document.getElementById('seccionInfo').classList.remove('seccionActiva');
-    document.getElementById('botonInfo').classList.remove('activo');
 
-    document.getElementById('seccionPago').classList.add('seccionActiva');
-    document.getElementById('botonPago').classList.add('activo');
-}
+function apartados(seccion) {
+    let botones, secciones, i;
+    botones = ['botonInfo', 'botonPago', 'botonMapa'];
+    secciones = ['seccionInfo', 'seccionPago', 'seccionMapa'];
 
-function seccionInfo() {
-    document.getElementById('seccionPago').classList.remove('seccionActiva');
-    document.getElementById('botonPago').classList.remove('activo');
-
-    document.getElementById('seccionInfo').classList.add('seccionActiva');
-    document.getElementById('botonInfo').classList.add('activo');
+    for (i = 0; i < botones.length; i++) {
+        document.getElementById(botones[i]).classList.remove('activo');
+        document.getElementById(secciones[i]).classList.remove('seccionActiva');
+    }
+    document.getElementById(botones[seccion - 1]).classList.add('activo');
+    document.getElementById(secciones[seccion - 1]).classList.add('seccionActiva');
 }

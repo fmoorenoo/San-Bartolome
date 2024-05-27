@@ -1,7 +1,9 @@
+footer {
+    padding: 0px;
+}
 main {
-    margin: auto;
-    border: solid #ccc;
-    width: 1000px;
+    margin: 20px auto;
+    width: 800px;
     height: 500px;
     padding: 0;
 }
@@ -9,27 +11,27 @@ main {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    border-bottom: solid #ccc;
     margin: 0;
-    background-color: var(--red);
+    background-color: var(--dark);
     cursor: pointer;
     font-size: 1.7rem;
 }
 .boton {
     font-weight: bold;
     color: white;
-    transition: all 0.5s;
-    width: 100%;
+    transition: all 1s;
+    width: 32%;
     padding: 5px;
     text-align: center;
 }
 .activo {
-    background-color: rgb(63, 130, 255);
-    transform: scale(1.1);
-    transition: all 0.5s;
+    background-color: var(--red);
+    transform: translateY(10px);
+    border-radius: 4px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+    transition: all 1s;
 }
-.boton:hover{
-    transform: scale(1.1);
+.boton:hover {
     transition: all 0.5s;
 }
 .club-section {
@@ -38,4 +40,25 @@ main {
 .seccionActiva {
     display: flex;
     flex-direction: column;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    border: solid var(--dark);
+}
+#content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+iframe {
+    align-self: center;
+    border-radius: 20px;
+    border: solid var(--dark);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
 }

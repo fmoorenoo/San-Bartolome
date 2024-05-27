@@ -166,10 +166,13 @@
         width: 100%;
     }
     #seccion2{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     #seccion2 p{
         padding: 0px;
+    }
+    #container p{
+        padding: 10px;
     }
     #liga{
         width: 300px;
