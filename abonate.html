@@ -30,24 +30,24 @@
   <!-- PESTAÑA -->
   <main>
     <div id="secciones">
-      <div class="boton" onclick="seccionInfo()">Información</div>
-      <div class="boton" onclick="seccionPago()">Hacerme Socio</div>
+        <div id="botonInfo" class="boton activo" onclick="seccionInfo()">Información</div>
+        <div id="botonPago" class="boton" onclick="seccionPago()">Hacerme Socio</div>
     </div>
     <div id="seccionInfo" class="club-section seccionActiva">
-      <h1>Únete a Nuestro Club</h1>
-      <p>Ser socio de nuestro club te ofrece numerosos beneficios. ¡Únete hoy y sé parte de nuestra comunidad!</p>
+        <h1>Únete a Nuestro Club</h1>
+        <p>Ser socio de nuestro club te ofrece numerosos beneficios. ¡Únete hoy y sé parte de nuestra comunidad!</p>
     </div>
 
     <div id="seccionPago" class="club-section">
-      <h1>Realizar el Pago</h1>
-      <p>Por favor, completa el siguiente formulario para realizar tu pago y convertirte en socio de nuestro club.</p>
-      <form>
-        <label for="nombre">Nombre Completo:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="email">Correo Electrónico:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <button type="submit" class="club-btn">Pagar</button>
-      </form>
+        <h1>Realizar el Pago</h1>
+        <p>Por favor, completa el siguiente formulario para realizar tu pago y convertirte en socio de nuestro club.</p>
+        <form autocomplete="off">
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <button type="submit" class="club-btn">Pagar</button>
+        </form>
     </div>
   </main>
   <!-- FOOTER -->

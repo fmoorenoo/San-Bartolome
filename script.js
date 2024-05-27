@@ -109,10 +109,16 @@ function limpiar(){
 
 function seccionPago() {
     document.getElementById('seccionInfo').classList.remove('seccionActiva');
+    document.getElementById('botonInfo').classList.remove('activo');
+
     document.getElementById('seccionPago').classList.add('seccionActiva');
+    document.getElementById('botonPago').classList.add('activo');
 }
 
 function seccionInfo() {
     document.getElementById('seccionPago').classList.remove('seccionActiva');
+    document.getElementById('botonPago').classList.remove('activo');
+
     document.getElementById('seccionInfo').classList.add('seccionActiva');
+    document.getElementById('botonInfo').classList.add('activo');
 }

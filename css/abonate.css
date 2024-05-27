@@ -1,7 +1,7 @@
 main {
-    margin: 50px;
+    margin: auto;
     border: solid #ccc;
-    width: 70%;
+    width: 1000px;
     height: 500px;
     padding: 0;
 }
@@ -13,12 +13,24 @@ main {
     margin: 0;
     background-color: var(--red);
     cursor: pointer;
-    padding: 5px;
     font-size: 1.7rem;
 }
-.boton{
+.boton {
     font-weight: bold;
     color: white;
+    transition: all 0.5s;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.activo {
+    background-color: rgb(63, 130, 255);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.boton:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 .club-section {
     display: none;
