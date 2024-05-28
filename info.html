@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Bartolomé C.F | Sobre Nosotros</title>
+    <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/info-Queries.css">
+</head>
+<body>
+  <!-- BANNER -->
+    <header>
+      <img id="logo" src="images/escudo.png" alt="">
+      <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">Sobre Nosotros</h1>
+      <img id="s1972" src="images/1972.png" alt="">
+    </header>
+
+  <!-- MENÚ LATERAL -->
+    <nav id="menu">
+      <ul>
+        <li onclick="cambiarSeccion(0)">HOME</li>
+        <li onclick="cambiarSeccion(1)">TERCERA</li>
+        <li onclick="cambiarSeccion(2)">ABÓNATE</li>
+        <li onclick="cambiarSeccion(3)" class="active">INFO</li>
+    </ul>
+    </nav>
+
+  <!-- PESTAÑA -->
+    <main>
+        <div id="secciones">
+            <div id="botonInfo" class="boton activo" onclick="apartados(1)">Información</div>
+            <div id="botonMapa" class="boton" onclick="apartados(2)">Encuéntranos</div>
+            <div id="botonPatr" class="boton" onclick="apartados(3)">Patrocinadores</div>
+        </div>
+        <div id="content">
+          <div id="seccionInfo" class="club-section seccionActiva">
+            <h1>Horario de Servicio</h1>
+            <p>Puedes encontrar a nuestros coordinadores o cualquier directivo en nuestras <a onclick="apartados(2)">instalaciones</a> entre las 16:00h y las 19:00h de Lunes a Viernes.</p><br>
+            <h1>Contáctanos</h1>
+            <form id="contactForm">
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" required>
+                <br><br>
+                <label for="asunto">Asunto:</label><br>
+                <input id="asunto" placeholder="*Opcional">
+                <br><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" placeholder="Escribe aquí tu texto" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+            <div id="seccionMapa" class="club-section">
+              <h1>¿Dónde nos encontramos?</h1>
+              <p>No te pierdas la oportunidad de animarnos en el campo 'Pedro Espinosa Colón'<br>
+              Haga <a href="#mapaIframe">click</a> en el mapa para ver la ubicación
+              </p>
+              <iframe id="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1744.8654747681912!2d-13.617037341278078!3d28.99534270000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4626b50045992d%3A0x397fb6f9414b9df3!2sCampo%20de%20f%C3%BAtbol%20San%20Bartolom%C3%A9!5e0!3m2!1ses!2ses!4v1716831902925!5m2!1ses!2ses" width="450" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="seccionPatr" class="club-section">
+                <h1>Patrocinadores</h1>
+            </div>
+            
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <section class="links">
+        <div class="redes">
+          <h3>Síguenos en redes sociales:</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="enlaces">
+            <h3>Enlaces útiles:</h3>
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+      </section>
+      <section id="legal">© 2024, San Bartolomé C.F. Todos los derechos reservados.</section>
+      
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

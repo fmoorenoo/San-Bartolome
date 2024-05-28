@@ -48,7 +48,7 @@ function mostrarLiga(xml) {
 function cambiarSeccion(li) {
     let secciones, urls;
     secciones = document.querySelectorAll("li");
-    urls = ["index.html", "tercera.html", "abonate.html", "campus.html"];
+    urls = ["index.html", "tercera.html", "abonate.html", "info.html"];
     for (let i = 0; i < secciones.length; i++) {
         secciones[i].classList.remove("active");
     }
@@ -90,8 +90,8 @@ if (jugador) {
     tarjeta += "</div>";
     document.getElementById("tarjetas").insertAdjacentHTML('afterbegin', tarjeta);
     document.getElementById("dorsales").value = "";
-    document.getElementById("dorsales").focus();
     document.getElementById("error").innerHTML = "";
+    document.getElementById("dorsales").blur();
 } else {
     document.getElementById("error").innerHTML = "No se encontró ningún jugador con ese dorsal.";
     setTimeout(function() {
@@ -110,8 +110,8 @@ function limpiar(){
 
 function apartados(seccion) {
     let botones, secciones, i;
-    botones = ['botonInfo', 'botonPago', 'botonMapa'];
-    secciones = ['seccionInfo', 'seccionPago', 'seccionMapa'];
+    botones = ['botonInfo', 'botonMapa', 'botonPatr'];
+    secciones = ['seccionInfo', 'seccionMapa', 'seccionPatr'];
 
     for (i = 0; i < botones.length; i++) {
         document.getElementById(botones[i]).classList.remove('activo');
