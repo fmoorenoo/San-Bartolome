@@ -60,6 +60,7 @@ main {
     overflow-x: hidden;
     scrollbar-width: thin;
     border: solid var(--dark);
+    margin-top: 20px;
 }
 #content p {
     font-size: 1.2rem;
