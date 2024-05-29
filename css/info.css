@@ -2,9 +2,12 @@ footer {
     padding: 15px;
 }
 main {
-    margin: 40px auto;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     width: 800px;
-    height: 500px;
+    height: 600px;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -50,9 +53,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 30px;
+    padding: 20px 50px;
     background-color: rgb(240, 240, 240);
-    height: 100%;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
     border: solid var(--dark);
 }
 #content p {
@@ -66,4 +72,38 @@ iframe {
     border: solid var(--dark);
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
     margin-top: 30px;
+}
+
+#message {
+    resize: none;
+}
+label {
+    font-size: 1.2rem;
+}
+input, textarea {
+    padding: 6px;
+    border-radius: 8px;
+}
+textarea {
+    width: 400px;
+}
+#inst {
+    color: var(--red);
+    cursor: pointer;
+    font-weight: bold;
+}
+#contacto button{
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#contacto button:hover{
+    background-color: var(--red);
+    transition: all 0.5s;
+}
+
+.img-info {
+    display: none;
 }

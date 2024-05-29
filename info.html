@@ -30,24 +30,33 @@
   <!-- PESTAÑA -->
     <main>
         <div id="secciones">
-            <div id="botonInfo" class="boton activo" onclick="apartados(1)">Información</div>
-            <div id="botonMapa" class="boton" onclick="apartados(2)">Encuéntranos</div>
-            <div id="botonPatr" class="boton" onclick="apartados(3)">Patrocinadores</div>
+            <div id="botonInfo" class="boton activo" onclick="apartados(1)">
+              <p>Información</p>
+              <img src="images/info.png" alt="" class="img-info">
+            </div>
+            <div id="botonMapa" class="boton" onclick="apartados(2)">
+              <p>Encuéntranos</p>
+              <img src="images/ubi.png" alt="" class="img-info">
+            </div>
+            <div id="botonPatr" class="boton" onclick="apartados(3)">
+              <p>Patrocinadores</p>
+              <img src="images/patro.png" alt="" class="img-info">
+            </div>
         </div>
         <div id="content">
           <div id="seccionInfo" class="club-section seccionActiva">
             <h1>Horario de Servicio</h1>
-            <p>Puedes encontrar a nuestros coordinadores o cualquier directivo en nuestras <a onclick="apartados(2)">instalaciones</a> entre las 16:00h y las 19:00h de Lunes a Viernes.</p><br>
+            <p>Puedes encontrar a nuestros coordinadores o cualquier directivo en nuestras <a onclick="apartados(2)" id="inst">instalaciones</a> entre las 16:00h y las 19:00h de Lunes a Viernes.</p><br>
             <h1>Contáctanos</h1>
-            <form id="contactForm">
+            <form id="contacto">
                 <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" required>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
                 <br><br>
                 <label for="asunto">Asunto:</label><br>
-                <input id="asunto" placeholder="*Opcional">
+                <input id="asunto" placeholder="Opcional">
                 <br><br>
                 <label for="message">Mensaje:</label><br>
-                <textarea id="message" name="message" placeholder="Escribe aquí tu texto" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe aquí tu texto" required></textarea>
                 <br>
                 <button type="submit">Enviar</button>
             </form>

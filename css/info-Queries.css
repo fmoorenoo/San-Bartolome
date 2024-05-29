@@ -36,6 +36,30 @@
     }
 }
 
+@media (max-width:950px) {
+    main {
+        margin: 40px 0px;
+        width: 80vw;
+        height: 600px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .img-info {
+        display: flex;
+        width: 40px;
+        height: auto;
+    }
+    .boton p {
+        display: none;
+    }
+    .boton {
+        display: flex;
+        justify-content: center;
+    }
+    #content {
+        padding: 15px;
+    }
+}
 @media (max-width: 800px) {
     footer {
         font-size: 0.8rem;
