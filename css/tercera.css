@@ -202,13 +202,16 @@ table tr td:not(:nth-child(2)) {
     #seccion2 h3{
         font-size: 1.6rem;
     }
+    #seccion2 p{
+        padding: 0;
+    }
     #liga{
         width: 100%;
         min-width: 100%;
         overflow-x: auto;
     }
     .tabla {
-        font-size: 18px;
+        font-size: 15px;
     }
     .tabla th, .tabla td {
         padding: 5px 5px; 
@@ -223,16 +226,16 @@ table tr td:not(:nth-child(2)) {
         font-size: 2.4rem;
     }
     .info h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 0px;
     }
     .tarjetas {
-        margin-top: 10px;
-        font-size: 1.4rem;
+        margin-top: 15px;
+        font-size: 1.2rem;
         gap: 15px;
     }
-    #seccion2 h3{
-        font-size: 1.6rem;
+    .tarjeta {
+        height: 70px;
     }
     #seccion2{
         font-size: 1.1rem;
@@ -242,11 +245,10 @@ table tr td:not(:nth-child(2)) {
         padding: 0 10px;
     }
     #liga{
-        width: 100%;
         padding: 5px;
     }
     .tabla {
-        font-size: 15px;
+        font-size: 13px;
     }
     #container p{
         padding: 20px;
@@ -261,18 +263,19 @@ table tr td:not(:nth-child(2)) {
     main h1{
         font-size: 1.9rem;
     }
-    .info h3{
-        font-size: 1.3rem;
-    }
-    .tarjetas, #seccion2 {
-        font-size: 1.2rem;
-    }
     #seccion2 p{
         padding: 10px;
     }
     #liga{
         width: 100%;
         padding: 0px;
+    }
+    .tarjetas {
+        font-size: 1rem;
+        gap: 15px;
+    }
+    .tarjeta {
+        height: 70px;
     }
     .tabla {
         font-size: 11px;
@@ -286,6 +289,9 @@ table tr td:not(:nth-child(2)) {
     }
     #container img {
         width: 90%
+    }
+    #seccion2 h3 {
+        margin-bottom: 0;
     }
 }
 
@@ -314,6 +320,7 @@ table tr td:not(:nth-child(2)) {
     #seccion2{
         font-size: 1rem;
     }
+    
     #seccion2 p, #container p{
         padding: 10px;
     }
@@ -328,12 +335,14 @@ table tr td:not(:nth-child(2)) {
 @media (max-width: 450px) {
     main {
         width: 89%;
+        margin: 0;
+        padding: 20px 10px;
     }
     main h1{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .info h3{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .tarjetas {
         font-size: 1.1rem;
@@ -345,6 +354,45 @@ table tr td:not(:nth-child(2)) {
     #seccion1 img {
         margin-top: 30px;
         width: 100%;
+    }
+    #seccion2{
+        font-size: 1rem;
+    }
+    #seccion2 p, #container p{
+        padding: 10px;
+    }
+    #liga{
+        width: 300px;
+    }
+    .tabla th, .tabla td {
+        padding: 5px 0px; 
+    }
+}
+
+@media (max-width: 370px) {
+    main {
+        width: 250px;
+        padding: 20px 5px;
+    }
+    main h1{
+        font-size: 1.4rem;
+    }
+    .info h3{
+        font-size: 1rem;
+    }
+    .tarjetas {
+        font-size: 1.1rem;
+    }
+    .tarjeta {
+        height: 70px;
+        width: 80%;
+    }
+    #seccion1 img {
+        margin-top: 30px;
+        width: 90%;
+    }
+    #seccion2 h3{
+        font-size: 1.2rem;
     }
     #seccion2{
         font-size: 1rem;
