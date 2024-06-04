@@ -1,0 +1,335 @@
+main {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+footer {
+    padding: 10px;
+}
+
+#masInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+#btn-info, #btn-noinfo {
+    font-size: 3rem;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+}
+
+#btn-info:hover, #btn-noinfo:hover {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.tarjeta{height: 470px;}
+.tarjeta, #ventajas {
+    background: linear-gradient(to right, rgb(235, 113, 113), rgb(255, 229, 229), rgb(147, 162, 182));
+    border-radius: 4px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+    margin: auto;
+    width: 800px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: solid 2px rgb(68, 68, 68);
+    transition: all 1s;
+}
+.ventaja {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    gap: 15px;
+    text-align: left;
+}
+div h1, #ventajas h2 {
+    color: rgb(255, 255, 255);
+    border-bottom: solid 2px rgb(68, 68, 68);
+    background-color: rgba(122, 122, 122, 0.418);
+    padding: 10px;
+}
+form {
+    border: solid 2px rgb(68, 68, 68);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.493);
+}
+input, select {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: solid 2px white;
+    outline: none;
+}
+select:hover, option:hover {
+    cursor: pointer;
+}
+option {
+    background-color: #cfdcff;
+    font-weight: bold;
+    font-size: 17px;
+}
+button{
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#contenido {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    padding: 20px;
+}
+#contenido.hidden {
+    display: none 
+}
+#ventajas.hidden {
+    display: none 
+}
+#img-50 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+#img-50 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: solid 2px rgb(68, 68, 68);
+}
+.hidden {
+    display: none;
+}
+
+#pago-tarjeta:not(.hidden), #pago-efectivo:not(.hidden), #pago-codigo:not(.hidden) {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+#pago-tarjeta form {
+    width: 350px;
+    margin-bottom: 15px;
+}
+#pago-codigo form {
+    width: 500px;
+}
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+}
+.titulo-seccion img{
+    width: 42px;
+    transition: all 0.3s;
+}
+.titulo-seccion img:hover{
+    transform: scale(1.15);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#pago-efectivo {
+    gap: 25px;
+}
+#pago-efectivo p {
+    border: solid 2px rgb(68, 68, 68);
+    font-size: 1.3rem;
+    width: 500px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.493);
+}
+.tarjeta a {
+    padding: 10px;
+    background-color: #6d6d6d9f;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.tarjeta a:hover {
+    padding: 10px;
+    background-color: #2e2e2e9f;
+}
+
+
+/*#######################   MEDIA QUERIES   #######################*/
+@media (max-width: 910px) {
+    #contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .tarjeta{height: 500px;}
+
+    .tarjeta, #ventajas {
+        width: 500px;
+        transition: all 1s;
+    }
+    form {
+        flex-direction: column;
+        width: 80%;
+    }
+    #img-50 {
+        display: none;
+    }
+    .ventaja {
+        font-size: 1.1rem;
+    }
+    #pago-efectivo p{
+        width: 450px;
+        font-size: 1.3rem;
+    }
+    #pago-codigo form {
+        width: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .tarjeta{height: 500px;}
+
+    .tarjeta, #ventajas {
+        width: 85%;
+        transition: all 1s;
+    }
+    form, #pago-tarjeta form {
+        flex-direction: column;
+        width: 320px;
+        transition: all 1s;
+    }
+    #img-50 {
+        display: none;
+    }
+    div h1 {
+        font-size: 2rem;
+    }
+    #ventajas h2{
+        font-size: 1.5rem;
+    }
+    .ventaja {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    #pago-efectivo p{
+        width: 350px;
+        font-size: 1.3rem;
+    }
+    #pago-codigo form {
+        width: 340px;
+    }
+}
+
+@media (max-width: 460px) {
+    main {
+        margin-left: 10px;
+    }
+    .tarjeta{height: 450px;}
+
+    form, #pago-tarjeta form {
+        width: 250px;
+        transition: all 1s;
+    }
+    div h1 {
+        font-size: 1.6rem;
+    }
+    #ventajas h2{
+        font-size: 1.5rem;
+    }
+    #pago-efectivo p{
+        width: 270px;
+        font-size: 1rem;
+    }
+    .titulo-seccion h2{
+        font-size: 1.2rem;
+    }
+    .titulo-seccion img{
+        width: 36px;
+        transition: all 0.3s;
+    }
+    #pago-tarjeta form {
+        gap: 14px;
+        padding: 10px;
+    }
+    #pago-codigo form {
+        width: 270px;
+    }
+    #ventajas h2{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .tarjeta{height: 400px;}
+
+    form, #pago-tarjeta form {
+        width: 200px;
+        transition: all 1s;
+        gap: 14px;
+        padding: 10px;
+    }
+    input, select {
+        font-size: 12px;
+    }
+    div h1 {
+        font-size: 1.4rem;
+    }
+    #ventajas h2{
+        font-size: 1.3rem;
+    }
+    #pago-efectivo p{
+        width: 230px;
+        font-size: 0.9rem;
+    }
+    .titulo-seccion h2{
+        font-size: 1rem;
+    }
+    .titulo-seccion img{
+        width: 36px;
+        transition: all 0.3s;
+    }
+    #pago-codigo form {
+        width: 230px;
+    }
+    #ventajas h2{
+        font-size: 1.3rem;
+    }
+    button{
+        padding: 10px;
+        font-size: 15px;
+    }
+}

@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/abonate.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/general-mediaQueries.css">
 </head>
 <body>
   <!-- BANNER -->
   <header>
-    <img id="logo" src="images/escudo.png" alt="">
-    <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">Hazte socio del club</h1>
+    <a href="index.html"><img id="logo" src="images/escudo.png" alt=""></a>
+    <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">Abónate</h1>
     <img id="s1972" src="images/1972.png" alt="">
   </header>
 
@@ -27,17 +27,75 @@
   </ul>
   </nav>
 
-  <!-- PESTAÑA -->
+  <!-- MAIN -->
   <main>
-      <h1>Realizar el Pago</h1>
-      <p>Por favor, completa el siguiente formulario para realizar tu pago y convertirte en socio de nuestro club.</p>
-      <form autocomplete="off">
-          <label for="nombre">Nombre Completo:</label><br>
-          <input type="text" id="nombre" name="nombre"><br>
-          <label for="email">Correo Electrónico:</label><br>
-          <input type="email" id="email" name="email"><br>
-      </form>
-</main>
+    <div id="masInfo" >
+      <label for="btn-info"><h3>Ver Ventajas</h3></label>
+      <img id="btn-info" src="images/mas.png">
+      <img id="btn-noinfo" class="hidden" src="images/menos.png">
+    </div>
+    <div id="ventajas" class="hidden">
+      <h2>¿Por qué deberías abonarte?</h2>
+      <div class="ventaja"><h3>Importe:</h3><p>50.00€ que se pagarán anualmente.</p></div>
+      <div class="ventaja"><h3>+</h3><p>Obtén acceso a TODOS nuestros partidos en casa.</p></div>
+      <div class="ventaja"><h3>+</h3><p>Descuento exclusivo para tu camiseta personalizada.</p></div>
+      
+    </div>
+    <div class="tarjeta">
+      <h1>¡Únete a la familia!</h1>
+      <div id="contenido">
+        <form id="formularioPago">
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="telefono" placeholder="Teléfono" required>
+          <select name="metodoPago" required id="metodoPago">
+            <option value="" disabled selected>Elige un método de pago</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="efectivo">Pago en efectivo</option>
+            <option value="codigo">Código especial</option>
+          </select>
+          <button type="submit">Confirmar - Importe: 50.00€</button>
+        </form>
+        <div id="img-50"><img src="images/50.jpg" alt=""></div>
+      </div>
+      <!-- Pestaña -->
+      <div id="pago-tarjeta" class="hidden">
+        <div class="titulo-seccion">
+            <img src="images/flecha-volver.png" alt="VOLVER" class="volver">
+            <h2>Datos de la tarjeta</h2>
+        </div>
+        <form>
+          <input type="password" name="numero" placeholder="Número de tarjeta" required>
+          <input type="text" name="nombre" placeholder="Nombre en la tarjeta" required>
+          <input type="text" name="fechE" placeholder="Fecha de expiración (MM/AA)" required>
+          <input type="text" name="cvc" placeholder="CVC" required>
+          <button type="submit">Realizar pago</button>
+        </form>
+      </div>
+      
+      <!-- Pestaña -->
+      <div id="pago-efectivo" class="hidden">
+        <div class="titulo-seccion">
+          <img src="images/flecha-volver.png" alt="VOLVER" class="volver">
+          <h2>Pago en efectivo</h2>
+        </div>
+        <p>Para realizar el pago en efectivo, pase por nuestras oficinas entre las 16:00h y las 19:00h de Lunes a Viernes.<br><br> Si lo desea, puede consultar nuestra ubicación en la sección de información</p>
+        <a href="info.html">Ver Info</a>
+      </div>
+      
+      <!-- Pestaña -->
+      <div id="pago-codigo" class="hidden">
+        <div class="titulo-seccion">
+          <img src="images/flecha-volver.png" alt="VOLVER" class="volver">
+          <h2>Código Especial</h2>
+        </div>
+        <form autocomplete="off">
+          <input type="text" name="codigoEspecial" placeholder="Ingresa tu código especial" required>
+          <button type="button">Ingresar</button>
+        </form>
+      </div>
+    </div>
+  </main>
   <!-- FOOTER -->
   <footer>
     <section class="links">

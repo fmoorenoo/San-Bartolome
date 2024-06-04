@@ -2,20 +2,19 @@ footer {
     padding: 15px;
 }
 main {
-    margin: 40px 0px;
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 800px;
-    height: 600px;
+    width: 850px;
+    height: 610px;
     padding: 0;
-    margin-bottom: 20px;
+    transition: width 0.3s;
 }
 #secciones {
     display: flex;
+    margin-top: 25px;
     width: 100%;
     justify-content: space-around;
-    margin: 0;
     padding: 0;
     background-color: var(--dark);
     cursor: pointer;
@@ -25,15 +24,14 @@ main {
     font-weight: bold;
     color: white;
     transition: all 1s;
-    width: 32%;
+    width: 23%;
     padding: 5px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 .activo {
-    background-color: var(--red);
-    transform: translateY(13px);
-    border-radius: 4px;
+    background-color: rgba(255, 81, 81, 0.658);
+    transform: translateY(10px);
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
     transition: all 1s;
 }
@@ -41,7 +39,6 @@ main {
     background-color: rgb(58, 58, 58);
     transition: all 1s;
 }
-
 .club-section {
     display: none;
 }
@@ -49,13 +46,16 @@ main {
     display: flex;
     flex-direction: column;
 }
+#seccionInfo p {
+    margin-left: 15px;
+}
 #content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px 50px;
     background-color: rgb(240, 240, 240);
-    max-height: 60vh;
+    max-height: 55vh;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: thin;
@@ -66,7 +66,6 @@ main {
     font-size: 1.2rem;
     margin-top: 10px;
 }
-
 iframe {
     align-self: center;
     border-radius: 20px;
@@ -74,7 +73,6 @@ iframe {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
     margin-top: 30px;
 }
-
 #message {
     resize: none;
 }
@@ -84,6 +82,7 @@ label {
 input, textarea {
     padding: 6px;
     border-radius: 8px;
+    border: solid 2px;
 }
 textarea {
     width: 400px;
@@ -99,12 +98,191 @@ textarea {
     padding: 3px;
     cursor: pointer;
 }
-
 #contacto button:hover{
     background-color: var(--red);
     transition: all 0.5s;
 }
-
 .img-info {
     display: none;
+}
+#imagenes {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 50px;
+    justify-content: center;
+}
+#imagenes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 8px 8px;
+    width: fit-content;
+}
+#imagenes img {
+    width: 450px;
+    border-radius: 0 0 8px 8px;
+}
+#imagenes h2 {
+    padding: 5px;
+    border-radius: 8px 8px 0 0;
+    background-color: rgb(153, 153, 153);
+    color: rgb(29, 29, 29);
+    width: 450px;
+    text-align: center;
+}
+
+
+/*#######################   MEDIA QUERIES   #######################*/
+@media (max-width: 1100px) {
+    main {
+        width: 650px;
+        transition: width 0.3s;
+    }
+    .img-info {
+        display: flex;
+        width: 40px;
+        height: auto;
+    }
+    .boton p {
+        display: none;
+    }
+    .boton {
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        grid-template-columns: 20px 1fr;
+    }
+}
+
+@media (max-width:850px) {
+    main {
+        width: 500px;
+        transition: width 0.3s;
+    }
+    #content {
+        padding: 15px;
+    }
+    textarea {
+        width: 300px;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    #imagenes {
+        gap: 30px;
+    }
+    #imagenes img, #imagenes h2 {
+        width: 350px;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 440px;
+        height: 550px;
+        transition: width 0.3s;
+        margin-left: 25px;
+    }
+    iframe{
+        width: 370px;
+        height: 250px;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    #seccionInfo p {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #secciones {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 360px;
+        transition: width 0.3s;
+    }
+    textarea {
+        width: 300px;
+    }
+    #imagenes img, #imagenes h2 {
+        width: 270px;
+    }
+    iframe{
+        width: 300px;
+        height: 265px;
+    }
+    #content div p, label {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    main {
+        width: 300px;
+        height: 535px;
+        transition: width 0.3s;
+    }
+    textarea {
+        width: 250px;
+        height: 80px;
+    }
+    #imagenes img, #imagenes h2 {
+        width: 270px;
+    }
+    iframe{
+        width: 265px;
+        height: 200px;
+    }
+    #content div p, label {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .img-info {
+        width: 34px;
+    }
+}
+
+@media (max-width: 360px) {
+    main {
+        width: 260px;
+        transition: width 0.3s;
+    }
+    textarea {
+        width: 220px;
+    }
+    #imagenes img, #imagenes h2 {
+        width: 220px;
+        font-size: 1rem;
+    }
+    iframe{
+        width: 245px;
+    }
+    #content div p, label {
+        font-size: 1rem;
+    }
+    #seccionInfo p {
+        margin-left: 0px;
+    }
+    #seccionInfo h2 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    .img-info {
+        width: 30px;
+    }
 }

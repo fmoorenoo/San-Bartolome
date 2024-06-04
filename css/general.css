@@ -5,7 +5,7 @@
 :root {
     --dark:#242424;
     --red: rgb(247, 82, 82);
-    --grey: rgb(190, 190, 190);
+    --grey: rgb(153, 153, 153);
 }
 * {
     padding: 0;
@@ -121,13 +121,13 @@ nav ul li{
     text-align: center;
 }
 nav ul li:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.4s;
     cursor: pointer;
     border: solid 2px white;
 }
 .active {
-    background: linear-gradient(to left, rgb(190, 190, 190), var(--red));
+    background: linear-gradient(to left, var(--grey), var(--red));
     color: rgb(255, 255, 255);
     border-radius: 20px 0 0 20px;
     width: 127px;
