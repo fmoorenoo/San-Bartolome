@@ -324,3 +324,38 @@ table tr td:not(:nth-child(2)) {
         padding: 5px 0px; 
     }
 }
+
+@media (max-width: 450px) {
+    main {
+        width: 89%;
+    }
+    main h1{
+        font-size: 1.6rem;
+    }
+    .info h3{
+        font-size: 1.2rem;
+    }
+    .tarjetas {
+        font-size: 1.1rem;
+    }
+    .tarjeta {
+        height: 70px;
+        width: 80%;
+    }
+    #seccion1 img {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #seccion2{
+        font-size: 1rem;
+    }
+    #seccion2 p, #container p{
+        padding: 10px;
+    }
+    #liga{
+        width: 300px;
+    }
+    .tabla th, .tabla td {
+        padding: 5px 0px; 
+    }
+}

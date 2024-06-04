@@ -96,6 +96,10 @@
     header {
         height: 110px;
     }
+    body {
+        grid-template-rows: 110px auto;
+        transition: all 1s;
+    }
     #menu {
         top: 130px;
     }
