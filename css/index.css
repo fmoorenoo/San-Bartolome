@@ -13,6 +13,9 @@ main {
 #veo {color: rgb(52, 155, 61);}
 #red {color: var(--red);}
 
+#idioma img {
+    width: 100px;
+}
 /* Secciones */
 #seccion1, #seccion2 {
     display: grid;

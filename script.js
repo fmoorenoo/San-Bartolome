@@ -1,11 +1,11 @@
-// // var language = 0; // 0 para Español, 1 para Inglés
+// // var idioma = 0; // 0 para Español, 1 para Inglés
 
 // // document.getElementById('btn-ingles').addEventListener('click', function() {
-// //     language = 1;
+// //     idioma = 1;
 // // });
 
 // // document.getElementById('btn-espanol').addEventListener('click', function() {
-// //     language = 0;
+// //     idioma = 0;
 // // });
 
 // CAMBIAR ENTRE LAS SECCIONES DE LA PÁGINA (MENÚ LATERAL)
