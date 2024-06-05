@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Bartolomé C.F | About Us</title>
+    <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+  <!-- BANNER -->
+  <header>
+    <a href="index.html"><img id="logo" src="images/escudo.png" alt=""></a>
+    <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">About Us</h1>
+    <img id="s1972" src="images/1972.png" alt="">
+  </header>
+
+<!-- MENÚ LATERAL -->
+  <nav id="menu">
+    <ul>
+      <li onclick="cambiarSeccion(0)">HOME</li>
+      <li onclick="cambiarSeccion(1)">3º RFEF</li>
+      <li onclick="cambiarSeccion(2)">PARTNER</li>
+      <li onclick="cambiarSeccion(3)" class="active">INFO</li>
+  </ul>
+  </nav>
+
+<!-- PESTAÑA -->
+  <main>
+    <div id="secciones">
+        <div id="botonInfo" class="boton activo" onclick="apartados(1)">
+          <p>Information</p>
+          <img src="images/info.png" alt="" class="img-info" title="Information">
+        </div>
+        <div id="botonContacto" class="boton" onclick="apartados(2)">
+          <p>Contact</p>
+          <img src="images/contacto.png" alt="" class="img-info" id="chat" title="Contact">
+        </div>
+        <div id="botonMapa" class="boton" onclick="apartados(3)">
+          <p>Find us</p>
+          <img src="images/ubi.png" alt="" class="img-info" title="Find us">
+        </div>
+        <div id="botonPatr" class="boton" onclick="apartados(4)">
+          <p>Sponsorships</p>
+          <img src="images/patro.png" alt="" class="img-info" title="Sponsorships">
+        </div>
+    </div>
+    <div id="content">
+      <!-- Info -->
+      <div id="seccionInfo" class="club-section seccionActiva">
+        <h2>- Club president</h2>
+        <p>Juan E. Elvira Tabares</p><br><br>
+        <h2>- Service Hours</h2>
+        <p>You can find our coordinators or any club member at our <a onclick="apartados(3)" id="inst">instalations</a> between 4:00 PM and 7:00 PM from Monday to Friday.</p><br><br>
+        <h2>- Contact phone</h2>
+        <p>+34 609535271</p><br><br>
+        <h2>- Our social media</h2> 
+        <p><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></p>
+        <p><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></p>
+        
+      </div>
+      <!-- Contacto -->
+      <div id="seccionContacto" class="club-section">
+        <h1>Contact us</h1>
+        <p>Send us any questions, concerns, or news you want to share with us.</p><br>
+        <form id="contacto">
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+            <br><br>
+            <label for="asunto">Subject:</label><br>
+            <input id="asunto" placeholder="Optional">
+            <br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Write your text here" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+      </div>
+      <!-- Mapa -->
+      <div id="seccionMapa" class="club-section">
+        <h1>Were can you find us?</h1>
+        <p>Don't miss the opportunity to cheer us on at 'Pedro Espinosa Colón' field<br>
+        <a href="#mapaIframe">Click</a> on the map to see the location
+        </p>
+        <iframe id="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1744.8654747681912!2d-13.617037341278078!3d28.99534270000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4626b50045992d%3A0x397fb6f9414b9df3!2sCampo%20de%20f%C3%BAtbol%20San%20Bartolom%C3%A9!5e0!3m2!1ses!2ses!4v1716831902925!5m2!1ses!2ses" width="450" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Patrocinadores -->
+      <div id="seccionPatr" class="club-section">
+          <h1>Our sponsors</h1>
+          <section id="imagenes">
+            <div>
+              <h2>CREA SL - Proyectos y obras</h2>
+              <img src="images/patrocinadores/0.jpg" alt="">
+            </div>
+            <div>
+              <h2>Lanzagrava SL</h2>
+              <img src="images/patrocinadores/1.png" alt="">
+            </div>
+            <div>
+              <h2>CICAR - Canary Islands Car</h2>
+              <img src="images/patrocinadores/2.png" alt="">
+            </div>
+            <div>
+              <h2>Fisiosan - San Bartolomé</h2>
+              <img src="images/patrocinadores/3.jpg" alt="">
+            </div>
+            <div>
+              <h2>Cocinas Hermasur</h2>
+              <img src="images/patrocinadores/4.jpg" alt="">
+            </div>
+            <div>
+              <h2>La Avenida- Bar & Restaurante</h2>
+              <img src="images/patrocinadores/5.jpg" alt="">
+            </div>
+            <div>
+              <h2>Inelcon SL</h2>
+              <img src="images/patrocinadores/6.jpg" alt="">
+            </div>
+            <div>
+              <h2>Electrisol canarias</h2>
+              <img src="images/patrocinadores/7.jpg" alt="">
+            </div>
+            <div>
+              <h2>Impulso 27</h2>
+              <img src="images/patrocinadores/8.jpg" alt="">
+            </div>
+            <div>
+              <h2>ARENAO</h2>
+              <img src="images/patrocinadores/9.png" alt="">
+            </div>
+            <div>
+              <h2>Dominik's Barber Shop</h2>
+              <img src="images/patrocinadores/10.jpg" alt="">
+            </div>
+            <div>
+              <h2>Tourism in Lanzarote</h2>
+              <img src="images/patrocinadores/11.png" alt="">
+            </div>
+            <div>
+              <h2>Noni - Repostería casera</h2>
+              <img src="images/patrocinadores/12.jpg" alt="">
+            </div>
+            <div>
+              <h2>Hotel Costa Calero</h2>
+              <img src="images/patrocinadores/13.jpg" alt="">
+            </div>
+            <div>
+              <h2>FERPA SL</h2>
+              <img src="images/patrocinadores/14.jpg" alt="">
+            </div>
+            <div>
+              <h2>Muebles Rubicón</h2>
+              <img src="images/patrocinadores/15.png" alt="">
+            </div>
+            <div>
+              <h2>Gobierno de Canarias</h2>
+              <img src="images/patrocinadores/16.jpg" alt="">
+            </div>
+            <div>
+              <h2>MaxiHogar</h2>
+              <img src="images/patrocinadores/17.jpg" alt="">
+            </div>
+          </section>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <section class="links">
+      <div id="enlaces">
+        <div class="redes">
+          <h3>Follow us on social media:</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="redes">
+          <h3>Useful Links:</h3>
+          <ul id="href">
+            <li><a href="#">Back to the top ^</a></li>
+            <li><a href="#href" title="Section not available">Privacy Policy</a></li>
+            <li><a href="#href" title="Section not available">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="qr">
+        <h3>Download the websites's QR Code</h3>
+        <a href="images/qr.png" download="qr-San-Bartolome.png">
+            <img src="images/qr.png" alt="QR Code">
+        </a>
+      </div>
+    </section>
+    <section id="legal">
+      <div>© 2024, San Bartolomé C.F. All rights reserved.</div>
+      <div>Creator: Fernando Montelongo Moreno</div>
+    </section>   
+  </footer>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

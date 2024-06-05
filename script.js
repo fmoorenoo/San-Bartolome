@@ -1,18 +1,34 @@
-// // var idioma = 0; // 0 para Español, 1 para Inglés
+// ELEGIR IDIOMA DE LA PÁGINA
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.getElementById('idiomas')) {
+        document.getElementById("btn-ingles").addEventListener("click", function() {
+            cambiarBandera("en");
+        });
+        document.getElementById("btn-esp").addEventListener("click", function() {
+            cambiarBandera("es");
+        });
+}});
 
-// // document.getElementById('btn-ingles').addEventListener('click', function() {
-// //     idioma = 1;
-// // });
+function cambiarBandera(flag) {
+    if (flag === "en") {
+        document.getElementById('btn-esp').classList.remove('idiomaActual');
+        document.getElementById('btn-ingles').classList.add('idiomaActual');
+    } else if (flag === "es") {
+        document.getElementById('btn-esp').classList.add('idiomaActual');
+        document.getElementById('btn-ingles').classList.remove('idiomaActual');
+    }
+};
 
-// // document.getElementById('btn-espanol').addEventListener('click', function() {
-// //     idioma = 0;
-// // });
+
 
 // CAMBIAR ENTRE LAS SECCIONES DE LA PÁGINA (MENÚ LATERAL)
 function cambiarSeccion(li) {
     let secciones, urls;
     secciones = document.querySelectorAll("li");
     urls = ["index.html", "tercera.html", "abonate.html", "info.html"];
+    if (window.location.href.includes("Z-")) {
+        urls = ["Z-index.html", "Z-tercera.html", "Z-abonate.html", "Z-info.html"];
+    }
     for (let i = 0; i < secciones.length; i++) {
         secciones[i].classList.remove("active");
     }
@@ -41,7 +57,11 @@ function mostrarLiga(xml) {
     let xmlDoc, table, equipos, i, pos, nombre, pts, pj, pg, pe, pp, dg;
     xmlDoc = xml.responseXML;
     table = "<table class='tabla'>";
-    table += "<tr><th>Puesto</th><th>Equipo</th><th>Pts</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>DG</th></tr>";
+    if (window.location.href.includes("Z-tercera.html")) {
+        table += "<tr><th>Rank</th><th>Team</th><th>Pts</th><th>GP</th><th>W</th><th>D</th><th>L</th><th>GD</th></tr>";
+    } else if (window.location.href.includes("tercera.html")){
+        table += "<tr><th>Puesto</th><th>Equipo</th><th>Pts</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>DG</th></tr>";
+    };
     equipos = xmlDoc.getElementsByTagName("equipo").length;
     for(i=0; i<equipos; i++) {
         nombre = xmlDoc.getElementsByTagName("nombre")[i].childNodes[0].nodeValue;
@@ -71,6 +91,9 @@ function paginaJugadores(li) {
         document.body.classList.add("claro");
     }
     urls = ["players.html", "tercera.html"];
+    if (window.location.href.includes("Z-")) {
+        urls = ["Z-players.html", "Z-tercera.html"];
+    }
     setTimeout(function() {
         window.location.href = urls[li]}, 400);
 } 
@@ -112,7 +135,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         function mostrarJugador(dorsal) {
-            let jugador;
+            let jugador, idioma;
+            if (window.location.href.includes("Z-players.html")) {
+                idioma = 1
+            } else {
+                idioma = 0
+            }
             jugador = null;
             for (let i = 0; i < jugadores.length; i++) {
                 if (jugadores[i].DORSAL === dorsal) {
@@ -123,8 +151,8 @@ document.addEventListener("DOMContentLoaded", function() {
             if (jugador) {
                 let tarjeta;
                 tarjeta = "<div class='tarjeta'><div class='datos'><div class='dor-nombre'><h1 class='dorsal'>" + jugador.DORSAL + "</h1><h2 class='nombre'>" + jugador.NOMBRE + "</h2></div>";
-                tarjeta += "<div class='pais'>- " + jugador.NACIONALIDAD + "</div>";
-                tarjeta += "<div class='posicion'>- " + jugador.POSICION + "</div></div>";
+                tarjeta += "<div class='pais'>- " + jugador.NACIONALIDAD[idioma] + "</div>";
+                tarjeta += "<div class='posicion'>- " + jugador.POSICION[idioma] + "</div></div>";
                 tarjeta += "<div class='imagen'><img src='images/players/" + jugador.IMAGEN + ".jpg'></div>";
                 tarjeta += "</div>";
                 document.getElementById("tarjetas").insertAdjacentHTML('afterbegin', tarjeta);
@@ -132,7 +160,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("error").innerHTML = "";
                 document.getElementById("dorsales").blur();
             } else {
-                document.getElementById("error").innerHTML = "No se encontró ningún jugador con ese dorsal.";
+                if (idioma === 0) {
+                    document.getElementById("error").innerHTML = "No se encontró ningún jugador con ese dorsal.";
+                } else {
+                    document.getElementById("error").innerHTML = "Player not found. Try another number";
+                }
+                
                 setTimeout(function() {
                     document.getElementById("error").innerHTML = "";
                 }, 1500);

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Bartolomé C.F | Be a partner</title>
+    <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/abonate.css">
+</head>
+<body>
+  <!-- BANNER -->
+  <header>
+    <a href="index.html"><img id="logo" src="images/escudo.png" alt=""></a>
+    <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">Be a partner</h1>
+    <img id="s1972" src="images/1972.png" alt="">
+  </header>
+
+  <!-- MENÚ LATERAL -->
+  <nav id="menu">
+    <ul>
+      <li onclick="cambiarSeccion(0)">HOME</li>
+      <li onclick="cambiarSeccion(1)">3º RFEF</li>
+      <li onclick="cambiarSeccion(2)" class="active">PARTNER</li>
+      <li onclick="cambiarSeccion(3)">INFO</li>
+  </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <div id="masInfo" >
+      <label for="btn-info"><h3>View Beneficts</h3></label>
+      <img id="btn-info" src="images/mas.png">
+      <img id="btn-noinfo" class="hidden" src="images/menos.png">
+    </div>
+    <div id="ventajas" class="hidden">
+      <h2>Why you should be partner?</h2>
+      <div class="ventaja"><h3>Price:</h3><p>50.00€ to be paid annually.</p></div>
+      <div class="ventaja"><h3>+</h3><p>Earn access to ALL our home games.</p></div>
+      <div class="ventaja"><h3>+</h3><p>Exclusive discount for your personalized jersey.</p></div>
+      
+    </div>
+    <div class="tarjeta">
+      <h1>Join the family!</h1>
+      <div id="contenido">
+        <form id="formularioPago">
+          <input type="text" name="nombre" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="telefono" placeholder="Telephone" required>
+          <select name="metodoPago" required id="metodoPago">
+            <option value="" disabled selected>Choose a payment method.</option>
+            <option value="tarjeta">Credit card</option>
+            <option value="efectivo">Cash payment</option>
+            <option value="codigo">Special code</option>
+          </select>
+          <button type="submit">Confirm - Price: 50.00€</button>
+        </form>
+        <div id="img-50"><img src="images/50.jpg" alt=""></div>
+      </div>
+      <!-- Pestaña -->
+      <div id="pago-tarjeta" class="hidden">
+        <div class="titulo-seccion">
+            <img src="images/flecha-volver.png" alt="VOLVER" class="volver">
+            <h2>Card details</h2>
+        </div>
+        <form>
+          <input type="password" name="numero" placeholder="Card number" required>
+          <input type="text" name="nombre" placeholder="Name in card" required>
+          <input type="text" name="fechE" placeholder="Expiration date (MM/YY)" required>
+          <input type="text" name="cvc" placeholder="CVC" required>
+          <button type="submit">Make payment</button>
+        </form>
+      </div>
+      
+      <!-- Pestaña -->
+      <div id="pago-efectivo" class="hidden">
+        <div class="titulo-seccion">
+          <img src="images/flecha-volver.png" alt="VOLVER" class="volver">
+          <h2>Cash payment</h2>
+        </div>
+        <p>To make a cash payment, visit our offices between 4:00 PM and 7:00 PM from Monday to Friday<br><br> If you want, you can find our location in the info section</p>
+        <a href="Z-info.html">View info</a>
+      </div>
+      
+      <!-- Pestaña -->
+      <div id="pago-codigo" class="hidden">
+        <div class="titulo-seccion">
+          <img src="images/flecha-volver.png" alt="VOLVER" class="volver">
+          <h2>Special code</h2>
+        </div>
+        <form autocomplete="off">
+          <input type="text" name="codigoEspecial" placeholder="Enter your special code" required>
+          <button type="button">Enter</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <section class="links">
+      <div id="enlaces">
+        <div class="redes">
+          <h3>Follow us on social media:</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="redes">
+          <h3>Useful Links:</h3>
+          <ul id="href">
+            <li><a href="#">Back to the top ^</a></li>
+            <li><a href="#href" title="Section not available">Privacy Policy</a></li>
+            <li><a href="#href" title="Section not available">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="qr">
+        <h3>Download the websites's QR Code</h3>
+        <a href="images/qr.png" download="qr-San-Bartolome.png">
+            <img src="images/qr.png" alt="QR Code">
+        </a>
+      </div>
+    </section>
+    <section id="legal">
+      <div>© 2024, San Bartolomé C.F. All rights reserved.</div>
+      <div>Creator: Fernando Montelongo Moreno</div>
+    </section>   
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

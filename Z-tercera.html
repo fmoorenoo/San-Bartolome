@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Bartolomé C.F | 3º RFEF</title>
+    <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/tercera.css">
+</head>
+<body> 
+  <!-- BANNER -->
+  <header>
+    <a href="index.html"><img id="logo" src="images/escudo.png" alt=""></a>
+    <h1 id="main-title">San Bartolomé C.F.</h1><span class="hide">|</span><h1 class="hide">3º RFEF</h1>
+    <img id="s1972" src="images/1972.png" alt="">
+  </header>
+
+  <!-- MENÚ LATERAL -->
+  <nav id="menu">
+    <ul>
+      <li onclick="cambiarSeccion(0)">HOME</li>
+      <li onclick="cambiarSeccion(1)" class="active">3º RFEF</li>
+      <li onclick="cambiarSeccion(2)">PARTNER</li>
+      <li onclick="cambiarSeccion(3)">INFO</li>
+  </ul>
+  </nav>
+
+  <!-- PESTAÑA -->
+  <main>
+    <h1>WE ARE IN THIRD DIVISION!</h1>
+    <section id="seccion1">
+      <div class="info">
+        <h3>A dream achieved after an unforgettable season.</h3>
+      </div>
+      <div class="tarjetas">
+        <a href="#title" class="tarjeta">The road to 3º RFEF..</a>
+        <a onclick="paginaJugadores(0)" class="tarjeta">¡Meet our players!</a>
+      </div>
+      <img src="images/tercera.jpg" alt="">
+    </section>
+    <span id="title"></span>
+    <section id="seccion2">
+      <h3>How did it all start?</h3>
+      <p>After 50 years of history, another dream comes true for the club, ascending to the Third Division of the 'Real Federación Española de Fútbol'<br><br>It all begins in the 22/23 season, with a very united and prepared squad that promised to go far. As the matchdays passed, the standings were taking shape, while our regional team was climbing positions. After months of work and sacrifice, San Bartolomé C.F. finished the league in playoff spots with only U.D. Las Palmas 'C' ahead, which would not play in the playoffs due to the presence of their 'B' team already in the second division.<br><br>This is how the standings looked after the 28 matchdays were completed.<br><br></p>
+
+      <div id="liga"></div><br><!-- Tabla generada con un request a un XML -->
+
+      <p>After facing and defeating Unión Viera 1-0 in the first leg of the playoffs, played at our Pedro Espinosa Colón field, the 0-0 draw at Alfonso Silva, in Gran Canaria, served our team led by Juan Antonio Machín to achieve the promotion.</p>
+      <div id="container">
+        <img src="images/asc.jpg" alt="" id="img-club">
+        <p>The team was supported in Gran Canaria by around 200 Lanzarote fans, who extended their celebration to the Lanzarote airport, where they were welcomed by numerous fans.<br><br>¡ORGULLO BATATERO!</p>
+      </div>
+    </section>
+  </main>
+
+    <!-- FOOTER -->
+  <footer>
+    <section class="links">
+      <div id="enlaces">
+        <div class="redes">
+          <h3>Follow us on social media:</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="redes">
+          <h3>Useful Links:</h3>
+          <ul id="href">
+            <li><a href="#">Back to the top ^</a></li>
+            <li><a href="#href" title="Section not available">Privacy Policy</a></li>
+            <li><a href="#href" title="Section not available">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="qr">
+        <h3>Download the websites's QR Code</h3>
+        <a href="images/qr.png" download="qr-San-Bartolome.png">
+            <img src="images/qr.png" alt="QR Code">
+        </a>
+      </div>
+    </section>
+    <section id="legal">
+      <div>© 2024, San Bartolomé C.F. All rights reserved.</div>
+      <div>Creator: Fernando Montelongo Moreno</div>
+    </section>   
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

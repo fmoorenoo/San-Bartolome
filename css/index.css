@@ -1,5 +1,5 @@
 main { 
-    margin-top: 50px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,9 +13,50 @@ main {
 #veo {color: rgb(52, 155, 61);}
 #red {color: var(--red);}
 
-#idioma img {
-    width: 100px;
+#elegirIdioma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(121, 159, 202);
+    border: solid 2px rgb(245, 245, 245);
 }
+
+#idiomas {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+#idiomas a {
+    display: flex;
+    align-items: center;
+}
+#idiomas img {
+    cursor: pointer;
+    height: 40px;
+    border: solid 2px rgb(238, 175, 38);
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+#idiomas img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+#idiomas img:not(.idiomaActual) {
+    filter: grayscale(100%);
+    transition: filter 0.5s, transform 0.5s;
+}
+#idiomas img:not(.idiomaActual):hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: filter 0.5s, transform 0.5s;
+}
+
 /* Secciones */
 #seccion1, #seccion2 {
     display: grid;
@@ -27,6 +68,7 @@ main {
     width: 80%;
     gap: 5%;
     margin-bottom: 40px;
+    margin-top: 15px;
 }
 .inicio {
     background-color: #f9f9f9b6;
