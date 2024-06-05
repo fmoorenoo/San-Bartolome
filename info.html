@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="images/escudo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/info.css">
-    <link rel="stylesheet" href="css/general-mediaQueries.css">
 </head>
 <body>
   <!-- BANNER -->
@@ -169,24 +168,35 @@
   <!-- FOOTER -->
   <footer>
     <section class="links">
-      <div class="redes">
-        <h3>Síguenos en redes sociales:</h3>
-        <ul>
-            <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="enlaces">
+      <div id="enlaces">
+        <div class="redes">
+          <h3>Síguenos en redes sociales:</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/SanBartolomeCF?locale=es_ES" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/san_bartolomecf/?hl=es" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="redes">
           <h3>Enlaces útiles:</h3>
           <ul>
-              <li><a href="#">Política de privacidad</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Volver al principio ^</a></li>
+            <li><a title="Sección no disponible">Política de privacidad</a></li>
+            <li><a title="Sección no disponible">Términos y condiciones</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="qr">
+        <h3>Descarga el QR de la página</h3>
+        <a href="images/qr.png" download="qr-San-Bartolome.png">
+            <img src="images/qr.png" alt="QR Code">
+        </a>
       </div>
     </section>
-    <section id="legal">© 2024, San Bartolomé C.F. Todos los derechos reservados.</section>
-    
-</footer>
+    <section id="legal">
+      <div>© 2024, San Bartolomé C.F. Todos los derechos reservados.</div>
+      <div>Creador: Fernando Montelongo Moreno</div>
+    </section>   
+  </footer>
 <script src="script.js"></script>
 </body>
 </html>
