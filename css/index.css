@@ -233,6 +233,16 @@ main {
     .noticia {
         font-size: 1rem;
     }
+    #elegirIdioma {
+        gap: 15px;
+        padding: 5px 10px;
+    }
+    #elegirIdioma p { 
+        font-size: 1rem;
+    }
+    #idiomas img {
+        height: 40px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -252,5 +262,34 @@ main {
     }
     #main-home {
         padding: 0;
+    }
+    #elegirIdioma p { 
+        font-size: 0.9rem;
+        transition: all 0.5s;
+    }
+    #idiomas img {
+        height: 37px;
+        transition: all 0.5s;
+    }
+    #elegirIdioma {
+        gap: 10px;
+        padding: 2px;
+        transition: all 0.5s;
+    }
+}
+
+@media (max-width: 350px) {
+    #elegirIdioma p { 
+        font-size: 0.7rem;
+        transition: all 0.5s;
+    }
+    #idiomas img {
+        height: 33px;
+        transition: all 0.5s;
+    }
+    #elegirIdioma {
+        gap: 10px;
+        padding: 2px;
+        transition: all 0.5s;
     }
 }
