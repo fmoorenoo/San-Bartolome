@@ -360,10 +360,12 @@ div ul li a:hover {
 }
 
 @media (max-height: 550px){
+    body {
+        grid-template-rows: 90px;
+    }
     header {
         height: 90px;
         transition: height 1s;
-        position: relative;
     }
     header h1{
         font-size: 30px;
@@ -376,8 +378,9 @@ div ul li a:hover {
         width: 85px;
     }
     #menu {
-        top: 85px;
+        top: 75px;
         transition: top 0.75s;
+        height: 1000px;
     }
     nav ul li {
         margin-top: 5px;
