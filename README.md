@@ -6,7 +6,7 @@
 
 ### Sitio web informativo y deportivo dedicado al club de Lanzarote
 
-**Desarrollo frontend · Web estática · Proyecto académico**
+**Proyecto académico personal · Desarrollo desde cero · Sin frameworks ni IA**
 
 ![HTML5](https://img.shields.io/badge/HTML5-1A1B26?style=for-the-badge&logo=html5&logoColor=E46B79)
 ![CSS3](https://img.shields.io/badge/CSS3-1A1B26?style=for-the-badge&logo=css3&logoColor=E46B79)
@@ -25,7 +25,9 @@
 
 ## Sobre el proyecto
 
-**San Bartolomé C.F.** es un sitio web informativo inspirado en el club de fútbol de Lanzarote. Se realizó como **proyecto final del módulo de Lenguajes de Marcas** del primer curso de **Desarrollo de Aplicaciones Multiplataforma (DAM)**.
+**San Bartolomé C.F.** es un sitio web informativo inspirado en el club de fútbol de Lanzarote. Se realizó hace unos años como **proyecto final del módulo de Lenguajes de Marcas** del primer curso de **Desarrollo de Aplicaciones Multiplataforma (DAM)**.
+
+Fue una web que desarrollé **íntegramente desde cero**, sin frameworks, sin herramientas de inteligencia artificial y sin reutilizar código de otros proyectos. Todo lo construí con mis **conocimientos básicos de programación de aquella época**, como ejercicio para poner en práctica lo que estaba aprendiendo.
 
 El proyecto reúne información sobre el club, noticias, su trayectoria deportiva y la plantilla. También incorpora una sección de abonos y contenido disponible en **español e inglés**.
 
@@ -55,7 +57,7 @@ El proyecto reúne información sobre el club, noticias, su trayectoria deportiv
 | **Publicación** | GitHub Pages |
 | **Herramientas** | Git · GitHub |
 
-El proyecto no requiere un framework frontend ni un backend para las funciones documentadas.
+Todo el desarrollo se hizo con código propio y sin utilizar frameworks. Es una muestra de mis primeros pasos en desarrollo web y de lo que era capaz de hacer con los conocimientos que tenía entonces.
 
 ## Arquitectura
 
@@ -108,7 +110,7 @@ Se recomienda utilizar un servidor local en lugar de abrir el HTML directamente 
 
 ## Estado del proyecto
 
-**Proyecto académico de frontend.** El repositorio conserva los recursos estáticos y las páginas desarrolladas para el ejercicio.
+**Proyecto académico de hace unos años, conservado en su versión original.** El repositorio permite ver cómo trabajaba cuando estaba empezando: sin frameworks, sin IA y sin reutilizar código, utilizando los conocimientos básicos que tenía entonces.
 
 Consideraciones importantes:
 
@@ -116,6 +118,12 @@ Consideraciones importantes:
 - **Formulario demostrativo:** la selección de formas de pago no equivale a un servicio real de compra de abonos.
 - **Datos JSON/XML:** los archivos se almacenan localmente en el repositorio y no se actualizan automáticamente desde fuentes deportivas externas.
 - **Accesibilidad y compatibilidad:** no se han realizado pruebas sistemáticas en navegadores o con tecnologías de asistencia durante esta revisión.
+
+## Próximo paso: una nueva versión
+
+Uno de los próximos proyectos que tengo en mente es **volver a desarrollar esta web para el San Bartolomé C.F.**, esta vez desde una perspectiva completamente nueva y aprovechando los conocimientos y la experiencia que he adquirido desde entonces.
+
+Me gustaría crear una versión renovada, con una presentación más cuidada y una experiencia de usuario mejorada. **Por ahora es una idea de futuro**, no una actualización ya realizada ni una nueva web oficial del club.
 
 ## Autor
 
@@ -127,5 +135,5 @@ Consideraciones importantes:
 ---
 
 <div align="center">
-  <sub>San Bartolomé C.F. · Proyecto académico de desarrollo web con HTML, CSS y JavaScript</sub>
+  <sub>San Bartolomé C.F. · Mi primer desarrollo web desde cero · Próxima renovación en mente</sub>
 </div>
