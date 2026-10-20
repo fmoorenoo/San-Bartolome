@@ -82,31 +82,9 @@ La interacción se concentra en `script.js`, mientras que los estilos se organiz
 
 <div align="center">
   <img src="images/noticias/main.jpg" alt="Imagen de presentación del San Bartolomé C.F. utilizada por la web" width="75%">
-  <p><sub>Imagen de contenido del sitio web; no es una captura completa del navegador.</sub></p>
 </div>
 
-Para explorar las pantallas y el comportamiento real de la interfaz, visita la **[demo publicada](https://fmoorenoo.github.io/San-Bartolome/)**.
-
-## Instalación y ejecución
-
-1. Clona el repositorio:
-
-   ```bash
-   git clone https://github.com/fmoorenoo/San-Bartolome.git
-   cd San-Bartolome
-   ```
-
-2. Inicia un servidor HTTP local en la raíz del proyecto, por ejemplo:
-
-   ```bash
-   python -m http.server 8000
-   ```
-
-3. Abre `http://localhost:8000/` en el navegador.
-
-Se recomienda utilizar un servidor local en lugar de abrir el HTML directamente con `file://`, ya que las peticiones a `liga.xml` y `players_catalog.json` pueden verse afectadas por restricciones de seguridad del navegador.
-
-**Versión publicada:** [GitHub Pages](https://fmoorenoo.github.io/San-Bartolome/).
+Para explorar las pantallas y el comportamiento de la interfaz, visita la **[demo publicada](https://fmoorenoo.github.io/San-Bartolome/)**.
 
 ## Estado del proyecto
 
@@ -117,7 +95,6 @@ Consideraciones importantes:
 - **Datos históricos:** noticias, clasificaciones, plantilla, precios y horarios no deben interpretarse como información actualizada del club.
 - **Formulario demostrativo:** la selección de formas de pago no equivale a un servicio real de compra de abonos.
 - **Datos JSON/XML:** los archivos se almacenan localmente en el repositorio y no se actualizan automáticamente desde fuentes deportivas externas.
-- **Accesibilidad y compatibilidad:** no se han realizado pruebas sistemáticas en navegadores o con tecnologías de asistencia durante esta revisión.
 
 ## Próximo paso: una nueva versión
 
@@ -133,7 +110,3 @@ Me gustaría crear una versión renovada, con una presentación más cuidada y u
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil_profesional-712B39?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/fernando-montelongo/)
 
 ---
-
-<div align="center">
-  <sub>San Bartolomé C.F. · Mi primer desarrollo web desde cero · Próxima renovación en mente</sub>
-</div>
