@@ -100,7 +100,7 @@ Consideraciones importantes:
 
 Uno de los próximos proyectos que tengo en mente es **volver a desarrollar esta web para el San Bartolomé C.F.**, esta vez desde una perspectiva completamente nueva y aprovechando los conocimientos y la experiencia que he adquirido desde entonces.
 
-Me gustaría crear una versión renovada, con una presentación más cuidada y una experiencia de usuario mejorada. **Por ahora es una idea de futuro**, no una actualización ya realizada ni una nueva web oficial del club.
+Me gustaría crear una versión renovada, con una presentación más cuidada y una experiencia de usuario mejorada. Estoy trabajando en ello para implementarla de la mano de Kora en este mismo repositorio. 
 
 ## Autor
 
